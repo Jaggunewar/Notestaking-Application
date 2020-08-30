@@ -1,0 +1,4 @@
+#Sun Aug 30 16:37:37 NPT 2020
+base.0=D\:\\demo\\TaskReminder\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

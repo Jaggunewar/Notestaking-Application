@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.taskreminder"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="26" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.taskreminder.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.taskreminder.CreateNote"
+            android:label="@string/title_activity_create_note" >
+    -
+            <intent-filter>
+                <action android:name="com.example.dominic.memo.CreateNote" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.taskreminder.View_Note"
+            android:label="@string/title_activity_information" >
+        </activity>
+        <activity
+            android:name="com.taskreminder.Edit_Note"
+            android:label="@string/title_activity_edit__note" >
+        </activity>
+
+        <receiver
+            android:name="com.taskreminder.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+        <receiver
+            android:name="com.taskreminder.NotificationManager2"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+
+        <activity
+            android:name="com.taskreminder.Alert"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+    </application>
+
+</manifest>
